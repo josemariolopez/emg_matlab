@@ -122,8 +122,8 @@ end
 fclose(arduino);
 
 %   encontrar el valor de MVC
-[~,force] = getpoints(h1);
-mvc = max(force);
+% [~,force] = getpoints(h1);
+mvc = max(y1);
 fhUpdateThreshold = getappdata(mainGui,'fhUpdateThreshold');
 setappdata(mainGui,'mvc',mvc);
 feval(fhUpdateThreshold);
